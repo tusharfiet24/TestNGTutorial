@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Day2 {
@@ -11,9 +12,11 @@ public class Day2 {
 //  XML Level -> @BeforeSuite, @AfterSuite, @BeforeTest, @AfterTest
 //  Class Level -> @BeforeClass, @AfterClass, @BeforeMethod, @AfterMethod
 
+	@Parameters({"URL"})
 	@Test(groups= {"Smoke"})
-	public void pLoan() {
+	public void pLoan(String url) {
 		System.out.println("Personal Loan");
+		System.out.println(url);
 	}
 	
 	@AfterSuite

@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Day3 {
@@ -15,10 +16,12 @@ public class Day3 {
 		System.out.println("Before executing any method in the class");
 	}
 	
+	@Parameters({"URL"})
 	@Test
-	public void webLoginCarLogin() {
+	public void webLoginCarLogin(String urlname) {
 		//Selenium
 		System.out.println("weblogincar");
+		System.out.println(urlname);
 	}
 	
 	@Test(groups= {"Smoke"})
