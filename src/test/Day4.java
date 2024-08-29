@@ -16,7 +16,7 @@ public class Day4 {
 		System.out.println("I'll execute first");
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void mobileLoginHomeLogin() {
 		//Appium
 		System.out.println("mobileloginhome");

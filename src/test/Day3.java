@@ -20,7 +20,7 @@ public class Day3 {
 		System.out.println("weblogincar");
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void mobileLoginCarLogin() {
 		//Appium
 		System.out.println("mobilelogincar");

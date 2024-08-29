@@ -11,7 +11,7 @@ public class Day2 {
 //  XML Level -> @BeforeSuite, @AfterSuite, @BeforeTest, @AfterTest
 //  Class Level -> @BeforeClass, @AfterClass, @BeforeMethod, @AfterMethod
 
-	@Test
+	@Test(groups= {"Smoke"})
 	public void pLoan() {
 		System.out.println("Personal Loan");
 	}
