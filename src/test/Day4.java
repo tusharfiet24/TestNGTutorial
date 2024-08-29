@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Day4 {
@@ -7,6 +8,12 @@ public class Day4 {
 	public void webLoginHomeLogin() {
 		//Selenium
 		System.out.println("webloginhome");
+	}
+	
+	@BeforeTest
+	public void beforeTest() {
+		//Appium
+		System.out.println("I'll execute first");
 	}
 	
 	@Test
