@@ -12,14 +12,13 @@
 				</methods>
 			</class>
 		</classes>
-	</test> <!-- Test
-	folder -->
+	</test> <!-- Test Folder -->
 
 	<test name="Car Loan">
 		<classes>
 			<class name="test.Day3">
 				<methods>
-					<exclude name="mobileLoginCarLogin" />
+					<exclude name="API.*" />
 				</methods>
 			</class>
 		</classes>
