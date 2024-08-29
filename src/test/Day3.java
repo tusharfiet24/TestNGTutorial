@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Day3 {
+//	TestNG Helper Attributes -> dependsOnMethods, enabled, timeOut.
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -32,15 +33,16 @@ public class Day3 {
 		System.out.println("I'll execute Before test suite");
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void mobileSignInCarLogin() {
 		//Appium
 		System.out.println("mobilesignincar");
 	}
 	
-	@Test
-	public void mobileSignOutCarLogin() {
+	@Test(timeOut=4000)
+	public void mobileSignOutCarLogin() throws InterruptedException {
 		//Appium
+		Thread.sleep(3000);
 		System.out.println("mobilesignoutcar");
 	}
 	
@@ -50,7 +52,7 @@ public class Day3 {
 		System.out.println("I'll execute before every method in Day3 class");
 	}
 	
-	@Test
+	@Test(dependsOnMethods={"mobileSignOutCarLogin", "webLoginCarLogin",})
 	public void APIcarLoan() {
 		//Rest API automation
 		System.out.println("apilogincar");
