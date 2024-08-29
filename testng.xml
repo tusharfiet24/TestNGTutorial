@@ -18,6 +18,7 @@
 
 	<test name="Car Loan">
 		<parameter name="URL" value="carloan.com" />
+		<parameter name="APIKey/username" value="123456" />
 		<classes>
 			<class name="test.Day3">
 				<methods>
