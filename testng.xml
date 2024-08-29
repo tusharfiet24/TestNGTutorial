@@ -6,13 +6,22 @@
 		<classes>
 			<class name="test.Day1" />
 			<class name="test.Day2" />
-			<class name="test.Day4" />
+			<class name="test.Day4">
+			<methods>
+					<include name="loginAPIhomeLoan" />
+				</methods>
+			</class>
 		</classes>
-	</test> <!-- Test folder -->
+	</test> <!-- Test
+	folder -->
 
 	<test name="Car Loan">
 		<classes>
-			<class name="test.Day3" />
+			<class name="test.Day3">
+				<methods>
+					<exclude name="mobileLoginCarLogin" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite> <!--Suite -->
